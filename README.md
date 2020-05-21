@@ -11,4 +11,3 @@ Hashtags:
 
 I use random choice to pick hashtags from my database (bird.csv, animal.csv)
 so every post will have at least slightly different hashtags. 
-
