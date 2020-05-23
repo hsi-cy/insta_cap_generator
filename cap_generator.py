@@ -32,8 +32,9 @@ def main():
     date = input('DATE\n').strip()
     content = input('CONTENT\n').split('\\n')
     content = [line.rstrip().lstrip()+'\n' for line in content]
-    footer = ['-\n','--\n','---\n','Nature is all around us!\n', 
-            'So #OpenYourMind #BeCurious #CareMore\n', '---\n','--\n','-\n']
+    sonytags = ['-\n','Camera: #sonya6500\n','Lens: #sel70350g\n']
+    footer = ['-\n','-\n','-\n','Nature is all around us!\n', 
+            'So #OpenYourMind #BeCurious #CareMore\n', '-\n','-\n','-\n']
     hashTable = input('HASHTAGS\n')
     hashTable = pd.read_csv(hashTable)
     hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(23)]
