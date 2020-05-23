@@ -35,9 +35,9 @@ def main():
     sonytags = ['-\n','Camera: #sonya6500\n','Lens: #sel70350g\n']
     footer = ['-\n','-\n','-\n','Nature is all around us!\n', 
             'So #OpenYourMind #BeCurious #CareMore\n', '-\n','-\n','-\n']
-    hashTable = input('HASHTAGS\n')
+    hashTable = input('Please choose from animal.csv or bird.csv\n')
     hashTable = pd.read_csv(hashTable)
-    hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(23)]
+    hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(21)]
     
     with open('post.txt','w',encoding='utf-8') as file:
         file.write('#' + species + '\n')
@@ -45,5 +45,6 @@ def main():
         file.write('Date: ' + date + '\n')
         file.write('---\n')
         file.writelines(content)
+        file.writelines(sonytags)
         file.writelines(footer)
         file.writelines(hashtags)
