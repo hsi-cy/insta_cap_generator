@@ -48,3 +48,7 @@ def main():
         file.writelines(sonytags)
         file.writelines(footer)
         file.writelines(hashtags)
+
+# if __name__ == "__main__":
+#     tags = setOfTags('/Users/hsichengyun/pyprac/instagram_caption_generator/text/bird.txt')
+#     produceCsv(tags,'bird.csv')
