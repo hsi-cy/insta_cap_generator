@@ -18,5 +18,5 @@ produceCsv function is literally produce a csv file as your database.
 I use random choice to pick hashtags from my database (bird.csv, animal.csv)
 so every post will have at least slightly different hashtags. 
 
-
+Using repeatitive tags all the time is considered a bad practice. That's the reason why we need the random choice.
 
