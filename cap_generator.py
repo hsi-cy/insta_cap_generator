@@ -35,8 +35,8 @@ def main():
     sonytags = ['-\n','Camera: #sonya6500\n','Lens: #sel70350g\n']
     footer = ['-\n','-\n','-\n','Nature is all around us!\n', 
             'So #OpenYourMind #BeCurious #CareMore\n', '-\n','-\n','-\n']
-    hashTable = input('Please choose from animal.csv or bird.csv\n')
-    hashTable = pd.read_csv(hashTable)
+    hashTable = input('Please choose from animal or bird\n')
+    hashTable = pd.read_csv(hashTable + '.csv')
     hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(21)]
     
     with open('post.txt','w',encoding='utf-8') as file:
@@ -49,6 +49,6 @@ def main():
         file.writelines(footer)
         file.writelines(hashtags)
 
-# if __name__ == "__main__":
-#     tags = setOfTags('/Users/hsichengyun/pyprac/instagram_caption_generator/text/bird.txt')
-#     produceCsv(tags,'bird.csv')
+if __name__ == "__main__":
+    tags = setOfTags('/Users/hsichengyun/pyprac/instagram_caption_generator/text/animal.txt')
+    produceCsv(tags,'animal.csv')
