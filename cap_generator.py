@@ -34,10 +34,10 @@ def main():
     content = [line.rstrip().lstrip()+'\n' for line in content]
     sonytags = ['-\n','Camera: #sonya6500\n','Lens: #sel70350g\n']
     footer = ['-\n','-\n','-\n','Nature is all around us!\n', 
-            'So #OpenYourMind #BeCurious #CareMore\n', '-\n','-\n','-\n']
+            'So #OpenYourMind #BeCurious #CareMore\n', 'By #hcy_wildlife_photography','-\n','-\n','-\n']
     hashTable = input('Please choose from animal or bird\n')
     hashTable = pd.read_csv(hashTable + '.csv')
-    hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(21)]
+    hashtags = ['#'+random.choice(hashTable['tags'])+' ' for i in range(23)]
     
     with open('post.txt','w',encoding='utf-8') as file:
         file.write('#' + species + '\n')
