@@ -20,3 +20,4 @@ so every post will have at least slightly different hashtags.
 
 Using repeatitive tags all the time is considered a bad practice. That's the reason why we need the random choice.
 
+1
