@@ -46,7 +46,7 @@ def main():
     ]
     hashTable = input("Please choose from animal or bird\n")
     hashTable = pd.read_csv(hashTable + ".csv")
-    hashtags = [("#" + i) for i in random.choices(hashTable["tags"], k=23)]
+    hashtags = [("#" + i + " ") for i in random.choices(hashTable["tags"], k=23)]
 
     with open("post.txt", "w", encoding="utf-8") as file:
         file.write("#" + species + "\n")
